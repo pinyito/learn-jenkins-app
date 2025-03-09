@@ -30,7 +30,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Test stage"
-                    grep build/index.html
+                    grep "index.html" learn-jenkins-app/build
                     npm test
                 '''
             }
